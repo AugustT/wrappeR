@@ -7,9 +7,11 @@
 tempSampPost(
   indata = "../data/model_runs/",
   keep,
+
+  keep_iter,
   output_path = "../data/sampled_posterior_1000/",
-  REGION_IN_Q = "psi.fs",
-  sample_n = 1000,
+  region,
+  sample_n = 999,
   tolerance = 3,
   group_name = "",
   combined_output = TRUE,
@@ -17,6 +19,7 @@ tempSampPost(
   min_year_model = NULL,
   write = FALSE,
   minObs = NULL,
+  scaleObs = "global",
   t0,
   tn,
   parallel = TRUE,
